@@ -4,5 +4,8 @@ yum install redis -y
 
 ##edit the redis.conf file and replace the port 127.0.0.1 to 0.0.0.0
 
+#sed -i -e 's|127.0.0.1|0.0.0.0|' /etc/redis.conf
+
+
 systemctl enable redis
 systemctl start redis
